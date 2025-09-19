@@ -86,7 +86,22 @@ public class App {
         System.out.println("The secret number is " + secretNumber + ". Shh! Don't tell anyone");
         Scanner reader = new Scanner(System.in);
         // WRITE YOUR CODE IN THE SPACE BELOW
+        int num = 0;
+        
+        while (true) {
+          
+        System.out.println("Guess a number:");   
+        int number = Integer.valueOf(reader.nextLine()); 
+        if (number==secretNumber)
+        break;
 
+         else if (number >=20 || number<=1) {
+            System.out.println("Pick a number from 1 to 20!");
+        }
+        }    
+       
+
+    
 
 
     }
